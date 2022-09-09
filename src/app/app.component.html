@@ -1,0 +1,15 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div>
+  <h1>
+    Seja bem vindo {{ title }}!
+  </h1>
+  <h2>Essa é a nossa primeira página Angular</h2>
+  <h4>A seguir, mostraremos um número:</h4>
+  <p>o número da vez é {{dados.numero}}</p>
+  <input type="button" value="Incrementa" (click)="incrementaNumero()" />
+  <input
+    type="number"
+    (change)="dados.numero=$event.target.value"
+    [value]="[(dados.numero)]"
+  />
+</div>
